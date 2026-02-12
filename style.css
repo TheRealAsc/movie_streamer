@@ -1,0 +1,94 @@
+body {
+    background: #050509;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    padding: 10px;
+    width: 250px;
+    border-radius: 6px;
+    border: none;
+}
+
+.search-box button {
+    padding: 10px 16px;
+    margin-left: 10px;
+    background: #ff4b8b;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+.category-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.category-buttons button {
+    padding: 10px 16px;
+    margin: 5px;
+    background: #7b5cff;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: #0b0b14;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #1f1f2b;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: #ff4b8b55;
+}
+
+.card-thumb {
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-body {
+    padding: 10px;
+    text-align: center;
+}
+
+.player-wrapper {
+    background: #000;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+#playerFrame {
+    width: 100%;
+    height: 480px;
+    border: none;
+    border-radius: 10px;
+}
