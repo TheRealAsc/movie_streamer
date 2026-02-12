@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1 class="title">Movies</h1>
+
+    <!-- Search -->
+    <div class="search-box">
+        <input id="searchInput" placeholder="Search for a movie...">
+        <button onclick="searchMovie()">Search</button>
+    </div>
+
+    <!-- Category Buttons -->
+    <div class="category-buttons">
+        <button onclick="loadCategory('trending')">Trending</button>
+        <button onclick="loadCategory('popular')">Popular</button>
+        <button onclick="loadCategory('top_rated')">Top Rated</button>
+        <button onclick="loadCategory('now_playing')">Now Playing</button>
+    </div>
+
+    <!-- Movie Cards -->
+    <div id="cardsGrid" class="cards-grid"></div>
+
+    <!-- Player -->
+    <div class="player-wrapper">
+        <iframe id="playerFrame" allowfullscreen></iframe>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
